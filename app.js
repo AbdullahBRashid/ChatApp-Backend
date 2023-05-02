@@ -1,22 +1,6 @@
-let html = "<html><head><title>WebServer</title></head><body><h1>Websocket Server</h1></body></html>"
-
-
-const express = require('express');
 const ws = require('ws');
 
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send(html);
-});
-
-app.listen(80, () => {
-    console.log('Server started on port 80');
-});
-
 const wss = new ws.WebSocketServer({ port: 4500 });
-
-// wss = WebServerSocket ig
 
 wss.on('connection', (ws) => {
     console.log('Client connected');
