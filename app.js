@@ -16,6 +16,8 @@ app.listen(3000, () => {
 
 const wss = new ws.WebSocketServer({ port: 4500 });
 
+// wss = WebServerSocket ig
+
 wss.on('connection', (ws) => {
     console.log('Client connected');
     ws.on('message', (message) => {
