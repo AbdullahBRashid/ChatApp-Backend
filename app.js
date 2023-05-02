@@ -1,10 +1,13 @@
+let html = "<html><head><title>WebServer</title></head><body><h1>Websocket Server</h1></body></html>"
+
+
 const express = require('express');
 const ws = require('ws');
 
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send(html);
 });
 
 app.listen(3000, () => {
