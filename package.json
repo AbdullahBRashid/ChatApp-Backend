@@ -2,5 +2,25 @@
   "dependencies": {
     "express": "^4.18.2",
     "socket.io": "^4.6.1"
-  }
+  },
+  "name": "chatapp-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdullahBRashid/ChatApp-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdullahBRashid/ChatApp-Backend/issues"
+  },
+  "homepage": "https://github.com/AbdullahBRashid/ChatApp-Backend#readme",
+  "description": ""
 }
