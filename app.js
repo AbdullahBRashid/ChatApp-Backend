@@ -1,4 +1,11 @@
+const express = require('express');
 const ws = require('ws');
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
 
 const wss = new ws.WebSocketServer({ port: 4000 });
 
