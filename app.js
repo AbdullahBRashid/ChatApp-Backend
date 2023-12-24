@@ -1,6 +1,6 @@
 const wsa = require('ws');
 
-const wss = new wsa.WebSocketServer({ port: 80 });
+const wss = new wsa.WebSocketServer({ port: 80, path: "/websocet" });
 
 wss.on('connection', (ws) => {
     console.log('Client connected');
