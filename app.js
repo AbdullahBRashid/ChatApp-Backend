@@ -1,6 +1,8 @@
 const wsa = require('ws');
+require('dotenv').config();
 
-const wss = new wsa.WebSocketServer({ port: 80, path: "/websocet" });
+const wss = new wsa.WebSocketServer({ port: process.env.PORT });
+
 
 wss.on('connection', (ws) => {
     console.log('Client connected');

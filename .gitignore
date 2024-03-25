@@ -1,4 +1,5 @@
 node_modules
-test.py
-test.js
-.gitignore
+.local
+.env
+.vscode
+package-lock.json
