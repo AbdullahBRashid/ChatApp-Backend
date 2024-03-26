@@ -8,10 +8,7 @@ app.get('/', (req, res) => {
 })
 
 app.ws('/ws', (ws, req) => {
-
-    ws.on('connection', () => {
-        console.log('Client connected');
-    });
+    console.log('Client connected!');
     ws.on('message', (message, isBinary) => {
         if (isBinary) {
             console.log(`Received Binary Message of ${message.length} bytes`);
@@ -31,5 +28,5 @@ app.ws('/ws', (ws, req) => {
 })
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server started on http://localhost:${process.env.PORT}`);
+    console.log(`Server started on Port: ${process.env.PORT}`);
 });
