@@ -11,6 +11,5 @@ Clone the repo or download the zip.
 Open the directory in your terminal.
 This server is **not secure** for production usage.
 
-    npm init -y
-    npm install
-    node app.js
+    npm i
+    npm start
